@@ -1,8 +1,15 @@
 import express from "express";
+import path from "node:path";
 
+const currentDirectory = process.cwd();
 const app = express();
 
-app.get("/", (req, res) => res.send("Hello, world!"));
+app.set("views", path.join(currentDirectory, "views"));
+app.set("view engine", "ejs");
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
 
 const PORT = 3000;
 
