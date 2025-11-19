@@ -7,6 +7,8 @@
   </head>
   <body>
     <h1>ExpressYourself</h1>
+    <p>Chatting as: "<%= username %>"</p>
+    <a href="/">Edit username</a>
     <ul>
       <% messages.forEach((message) => { %> <%- include("message", {message:
       message}) %> <% }); %>

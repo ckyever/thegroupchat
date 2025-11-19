@@ -1,17 +1,25 @@
 import { Router } from "express";
 import { messages, postMessage } from "../models/messasges.js";
 
+let username = "Anonymous";
+
 const indexRouter = Router();
 indexRouter.get("/", (req, res) => {
-  res.render("index", { messages: messages });
+  res.render("username");
 });
-indexRouter.get("/new", (req, res) => {
-  res.render("form");
+
+indexRouter.get("/chat", (req, res) => {
+  res.render("chat", { username: username, messages: messages });
+});
+
+indexRouter.post("/username", (req, res) => {
+  username = req.body.username;
+  res.redirect("/chat");
 });
 
 indexRouter.post("/new", (req, res) => {
-  postMessage(req.body.messageText, req.body.username);
-  res.redirect("/");
+  postMessage(req.body.messageText, username);
+  res.redirect("/chat");
 });
 
 export { indexRouter };
