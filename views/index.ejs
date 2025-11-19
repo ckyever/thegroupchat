@@ -7,5 +7,9 @@
   </head>
   <body>
     <h1>ExpressYourself</h1>
+    <ul>
+      <% messages.forEach((message) => { %> <%- include("message", {message:
+      message}) %> <% }); %>
+    </ul>
   </body>
 </html>
