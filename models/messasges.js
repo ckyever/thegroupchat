@@ -4,28 +4,33 @@ const getCurrentUTCDateTime = () => {
 
 const messages = [
   {
-    text: "Last year",
+    text: "First!",
     user: "ckyzo",
-    added: "2024-07-01T23:42:13.787Z",
+    added: "2020-07-01T23:42:13.787Z",
   },
   {
-    text: "Last month",
-    user: "chanpan",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mi vitae ligula euismod auctor eu sed turpis. In sollicitudin tortor eu finibus semper. Cras tempor euismod suscipit. Aliquam ultricies lorem nunc, non aliquam est volutpat vel. In porttitor augue eget massa tempus, vel consectetur tellus vestibulum. Etiam sodales iaculis quam sit amet tristique. Nam sodales id odio id viverra.",
+    user: "Chanpan",
     added: "2025-10-01T11:02:53.787Z",
   },
   {
-    text: "Yesterday",
-    user: "ninajirachi",
+    text: "Who asked?",
+    user: "MF DOOM",
     added: "2025-11-18T23:42:13.787Z",
   },
   {
-    text: "An hour ago",
-    user: "fike",
+    text: "HAHAHA 😂",
+    user: "Ninajirachi",
     added: "2025-11-19T22:42:13.787Z",
   },
   {
-    text: "Just then",
-    user: "garchomp",
+    text: "Number one. Steady hand. One day, Yakuza boss need new heart. I do operation. But mistake! Yakuza boss die! Yakuza very mad! I hide fishing boat, come to America. No English, no food, no money. Darryl give me job. Now I have house, American car and new woman. Darryl save life.",
+    user: "Joji",
+    added: getCurrentUTCDateTime(),
+  },
+  {
+    text: "sybau",
+    user: "Clairo",
     added: getCurrentUTCDateTime(),
   },
 ];
