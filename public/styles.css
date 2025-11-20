@@ -205,6 +205,8 @@ main {
 
 .message-list > .message {
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
 }
 
 .message-list > .message .username {
@@ -214,8 +216,10 @@ main {
 
 .message-list > .message .text {
   background-color: var(--alternate-background-colour);
-  padding: 12px;
+  padding: 8px 12px;
   border-radius: 24px;
+  flex: 0;
+  align-self: flex-start;
 }
 
 .message-list > .message:nth-child(4n) {
@@ -229,4 +233,5 @@ main {
 .message-list > .message:nth-child(4n) .text {
   background-color: var(--accent-colour);
   color: var(--main-background-colour);
+  align-self: flex-end;
 }
