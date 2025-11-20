@@ -34,5 +34,11 @@
         <div class="text-container"><%- include("form") %></div>
       </footer>
     </div>
+    <script>
+      window.addEventListener("load", () => {
+        const box = document.querySelector("main");
+        box.scrollTop = box.scrollHeight;
+      });
+    </script>
   </body>
 </html>
