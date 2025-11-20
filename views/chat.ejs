@@ -44,6 +44,14 @@
         const box = document.querySelector("main");
         box.scrollTop = box.scrollHeight;
       });
+      document
+        .querySelector("#message-text")
+        .addEventListener("keydown", (event) => {
+          if (event.key === "Enter" && !event.shiftKey) {
+            event.preventDefault();
+            document.querySelector("#send").click();
+          }
+        });
     </script>
   </body>
 </html>
