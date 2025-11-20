@@ -78,10 +78,47 @@ h6 {
 
 /* End of CSS Reset */
 
+:root {
+  --main-background-colour: #ffffff;
+  --alternate-background-colour: #f2f2f2;
+  --accent-colour: #0a83ff;
+  --border-colour: #e3e3e3;
+  --slightly-rounded-border: 12px;
+}
+
 body {
+  font-family: "Inter";
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.username-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  transform: translateY(-200px);
+}
+
+.username-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.username-input {
+  padding: 8px;
+  border: 2px solid var(--border-colour);
+  border-radius: var(--slightly-rounded-border);
+}
+
+.accent-button {
+  padding: 8px;
+  background-color: var(--accent-colour);
+  color: var(--main-background-colour);
+  border: none;
+  border-radius: var(--slightly-rounded-border);
+  cursor: pointer;
 }
