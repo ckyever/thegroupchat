@@ -40,10 +40,13 @@
       </footer>
     </div>
     <script>
+      // Scroll to bottom of chat on load
       window.addEventListener("load", () => {
         const box = document.querySelector("main");
         box.scrollTop = box.scrollHeight;
       });
+
+      // Allow enter to send messages
       document
         .querySelector("#message-text")
         .addEventListener("keydown", (event) => {
@@ -52,6 +55,15 @@
             document.querySelector("#send").click();
           }
         });
+
+      // Don't show popup validation for form errors
+      document.addEventListener(
+        "invalid",
+        (e) => {
+          e.preventDefault();
+        },
+        true
+      );
     </script>
   </body>
 </html>
