@@ -139,8 +139,17 @@ body {
   padding: 20px;
 }
 
+.logo-container {
+  padding: 8px;
+  background-color: #b9b9b9;
+  width: 75px;
+  border-radius: 50%;
+  margin: auto;
+}
+
 h1 {
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .username-indicator {
@@ -151,7 +160,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--main-text-colour);
+  color: var(--accent-colour);
   text-decoration: none;
 }
 
@@ -167,7 +176,7 @@ footer {
 header {
   background-color: var(--alternate-background-colour);
   border-bottom: var(--chat-border);
-  height: 140px;
+  height: 200px;
 }
 
 header .text-container {
