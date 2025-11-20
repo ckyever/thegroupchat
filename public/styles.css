@@ -128,7 +128,7 @@ body {
 .chat-container {
   display: flex;
   flex-direction: column;
-  border: var(--chat-border);
+  border: 12px solid black;
   height: 1100px;
   width: 650px;
   border-radius: 50px;
