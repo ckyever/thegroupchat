@@ -199,6 +199,11 @@ main {
   list-style: none;
 }
 
+.message-list .timestamp,
+.message-list .username {
+  font-size: 0.8rem;
+}
+
 .message-list .timestamp {
   text-align: center;
   color: var(--alternate-text-colour);
