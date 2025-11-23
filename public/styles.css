@@ -242,6 +242,7 @@ main {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 .message-list > .message .username {
@@ -256,6 +257,7 @@ main {
   flex: 0;
   align-self: flex-start;
   margin-bottom: 8px;
+  max-width: 100%;
 }
 
 .message-list > .message:nth-child(4n) {
