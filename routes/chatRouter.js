@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { messages, postMessage } from "../models/messasges.js";
+import { getMessages, insertMessage } from "../db/queries.js";
 import user from "../models/user.js";
 
 const getDayMonthYearFromUtcDateTime = (utcDateTime = null) => {
@@ -44,16 +44,16 @@ const getChatTimestamp = (utcDateTime) => {
 
 const chatRouter = Router();
 
-chatRouter.get("/", (req, res) => {
+chatRouter.get("/", async (req, res) => {
   res.render("chat", {
     username: user.username,
-    messages: messages,
+    messages: await getMessages(),
     getChatTimestamp: getChatTimestamp,
   });
 });
 
-chatRouter.post("/new", (req, res) => {
-  postMessage(req.body.messageText, user.username);
+chatRouter.post("/new", async (req, res) => {
+  await insertMessage(req.body.messageText, user.username);
   res.redirect("/chat");
 });
 
