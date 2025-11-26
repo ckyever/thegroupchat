@@ -1,6 +1,6 @@
 # TheGroupChat
 
-A message board website styled like an instant messaging app. Built with Node.js, Express, EJS, HTML5, CSS3, JavaScript (ES6+).
+A message board website styled like an instant messaging app. Built with Node.js, Express, EJS, HTML5, CSS3, JavaScript (ES6+), and PostgreSQL.
 
 👉 [Live Demo](https://thegroupchat-o0fa.onrender.com)
 
